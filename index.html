@@ -27,10 +27,10 @@
   </script>
   </head>
   <body>
-  <section class="bg-[url('./images/events.jpeg')] w-screen h-screen bg-cover bg-no-repeat p-10">
-    <div class="bg-[#000000a1] mt-[130px] rounded-xl p-3 lg:w-4/5 lg:mx-auto lg:mt-[120px]">
+  <section class="bg-[url('./images/events.jpeg')] w-screen h-[100vh] bg-cover bg-no-repeat p-10">
+    <div class="bg-[#000000a1] mt-[25vh] rounded-xl p-3 lg:w-4/5 lg:mx-auto lg:mt-[120px]">
       <h1 class="text-2xl text-center w-full  text-white font-bold  md:text-3xl md:p-8 lg:text-4xl lg:w-3/4 lg:mx-auto lg:p-15 lg:h-[30%] lg:leading-10 lg:text-center"> Know the number of days to plan for your next big event!</h1>
-   <input type="text" placeholder="enter month (e.g January)" class="rounded outline-none hover:border hover:border-purple-900 py-2 px-4 w-[99%] mt-5 font-bold md:w-3/4 md:ml-[12%] lg:w-2/4 lg:ml-[25%] lg:mt-10 lg:text-xl"><span class="span ml-[-30%] font-extrabold text-red-700 text-lg cursor-pointer sm:ml-[-12%] md:ml-[-12.5%]"></span><br/>
+   <input type="text" placeholder="enter month (e.g January)" class="rounded outline-none hover:border hover:border-purple-900 py-2 px-4 w-[99%] mt-5 font-bold md:w-3/4 md:ml-[12%] lg:w-2/4 lg:ml-[25%] lg:mt-10 lg:text-xl"><span class="span ml-[-33%] font-extrabold text-red-700 text-lg cursor-pointer sm:ml-[-12%] md:ml-[-12.5%]"></span><br/>
    <div id="demo" class=" mt-5 text-center text-white w-1/2 mx-auto"></div>
    <div class="w-[80%] mx-auto flex justify-center">
     <button class="p-3 cursor-pointer hover:bg-red-900 rounded bg-blue-900 border border-white font-bold text-lg text-white mt-10 mb-3 md:mb-6"><span class="p-4 rounded">Number of Days</span></button>
@@ -50,76 +50,76 @@ let span = document.querySelector(".span");
 
 
 btn.addEventListener("click", ()=>{
-  let input = document.querySelector("input").value.toLowerCase();
-  switch (input) {
+  let input = document.querySelector("input").value;
+  switch (input.toLowerCase()) {
     case "january":
-      info.innerText = `${input} has 31 days`;
+      info.innerText = `${input.toLowerCase()} has 31 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
     case "march":
-      info.innerText = `${input} has 31 days`;
+      info.innerText = `${input.toLowerCase()} has 31 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
     case "may":
-      info.innerText = `${input} has 31 days`;
+      info.innerText = `${input.toLowerCase()} has 31 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
     case "july":
-      info.innerText = `${input} has 31 days`;
+      info.innerText = `${input.toLowerCase()} has 31 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
     case "august":
-      info.innerText = `${input} has 31 days`;
+      info.innerText = `${input.toLowerCase()} has 31 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
     case "october":
-      info.innerText = `${input} has 31 days`;
+      info.innerText = `${input.toLowerCase()} has 31 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
     case "december":
-      info.innerText = `${input} has 31 days`;
+      info.innerText = `${input.toLowerCase()} has 31 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
       case "april":
-      info.innerText = `${input} has 30 days`;
+      info.innerText = `${input.toLowerCase()} has 30 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
       case "june":
-      info.innerText = `${input} has 30 days`;
+      info.innerText = `${input.toLowerCase()} has 30 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
       case "september":
-      info.innerText = `${input} has 30 days`;
+      info.innerText = `${input.toLowerCase()} has 30 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
       case "november":
-      info.innerText = `${input} has 30 days`;
+      info.innerText = `${input.toLowerCase()} has 30 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
       break;
     case "february":
-      info.innerText = `${input} has 28 days`;
+      info.innerText = `${input.toLowerCase()} has 28 days`;
       span.innerText = "clear input"
       info.style.fontSize = "25px";
       info.style.transition = "all 1s"
