@@ -1,0 +1,5 @@
+#git ignore these files in folder:
+**css
+**style.css
+#style.css.map
+#style.scss
